@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Exercice 1W1 - Flexbox</title>
+</head>
+
+<body>
+    <div id="global">
+        <header>
+            <nav>
+                <ol>
+                    <li><a href="#accueil">Accueil</a></li>
+                    <li><a href="#inscription">Inscription</a></li>
+                    <li><a href="#tableau">Tableau</a></li>
+                    <li><a href="#articles">Articles</a></li>
+                    <li><a href="#galerie">Galerie</a></li>
+                    <li><a href="#video">Vidéo</a></li>
+                    <li><a href="#piedDePage">Pied de page</a></li>
+                </ol>
+            </nav>
+            <div id="accueil">
+                <h5 id="top">TP2</h5>
+                <h1>Les patates</h1>
+                <h3>Élorie Léonard</h3>
+                <h4>582-1W1 - Mise en page Web</h4>
+                <h4>Techniques d'intégration multimédia</h4>
+                <h5>Collège de Maisonneuve</h5>
+                <h5>Automne 2022</h5>
+            </div>
+        </header>
+        <main>
+            <div id="inscription">
+                <h1 id="titreIncrip">Inscription</h1>
+                <form action="form">
+                    <fieldset class="colonne">
+                        <fieldset id="identification">
+                            <legend id="leg1">Inscription à la secte des patates</legend>
+                            <label>Nom<input type="text" required></label>
+                            <label>Prénom:<input type="text" required></label>
+                            <label>Âge:<input type="number" min="0" max="125" required></label>
+                        </fieldset>
+                        <fieldset id="contacts">
+                            <legend id="leg2">Contacts</legend>
+                            <label>Courriel:<input type="email" required></label>
+                            <label>Téléphone:<input type="tel" placeholder="Facultatif"></label>
+                            <label>Adresse Web:<input type="url" placeholder="Facultatif"></label>
+                        </fieldset>
+                        <fieldset class="colonne">
+                            <fieldset id="patatePref">
+                                <legend>Votre sorte de patate préférée</legend>
+                                <label><input type="radio" name="patate" checked><span></span>Agatha</label>
+                                <label><input type="radio" name="patate"><span></span>Bintje</label>
+                                <label><input type="radio" name="patate"><span></span>Charlotte</label>
+                                <label><input type="radio" name="patate"><span></span>Désirée</label>
+                                <label><input type="radio" name="patate"><span></span>Kennebec</label>
+                                <label><input type="radio" name="patate"><span></span>Monalisa</label>
+                                <label><input type="radio" name="patate"><span></span>Nicola</label>
+                                <label><input type="radio" name="patate"><span></span>Russet Burbank</label>
+                                <label><input type="radio" name="patate"><span></span>Yukon Gold</label>
+                            </fieldset>
+                        </fieldset>
+                        <fieldset id="bloc">
+                            <legend id="leg3">Pourquoi voulez-vous rejoindre la secte?</legend>
+                            <textarea cols="70" rows="10" placeholder="My life is potato..."></textarea>
+                        </fieldset>
+                    </fieldset>
+                        <fieldset id="boutons">
+                            <input type="submit" value="Envoyer">
+                            <input type="reset" value="Tout effacer">
+                        </fieldset>
+                </form>
+            </div>
+            <div id="tableau" class="table">
+                <h1 id="producteurs">Plus grands producteurs de patates</h1>
+                <table>
+                    <tr>
+                      <th>Pays</th>
+                      <th>Producion (tonnes)</th>
+                    </tr>
+                    <tr>
+                      <td>République populaire de Chine</td>
+                      <td>99.122.420</td>
+                    </tr>
+                    <tr>
+                      <td>Inde</td>
+                      <td>43.770.000</td>
+                    </tr>
+                    <tr>
+                        <td>Fédération de Russie</td>
+                        <td>31.107.797</td>
+                      </tr>
+                      <tr>
+                        <td>Ukraine</td>
+                        <td>21.750.290</td>
+                      </tr>
+                      <tr>
+                        <td>États-Unis d'Amérique</td>
+                        <td>19.990.950</td>
+                      </tr>
+                      <tr>
+                        <td>Allemagne</td>
+                        <td>10.772.100</td>
+                      </tr>
+                      <tr>
+                        <td>Bangladesh</td>
+                        <td>9.474.099</td>
+                      </tr>
+                      <tr>
+                        <td>Pologne</td>
+                        <td>8.872.445</td>
+                      </tr>
+                      <tr>
+                        <td>France</td>
+                        <td>6.834.680</td>
+                      </tr>
+                      <tr>
+                        <td>Pays-Bas</td>
+                        <td>	6.534.338</td>
+                      </tr>
+                  </table>
+            </div>
+            <div id="articles" class="flex-container">
+
+                <div class="flex-child gauche">
+                    <h1>La Pomme de terre</h1>
+                    <h3>Qu'est-ce que c'est?</h3>
+                    <p>La Pomme de terre ou patate (dans le registre informel ou bien en français canadien, suisse ou belge) est un tubercule comestible produit par l’espèce Solanum tuberosum, appartenant à la famille des solanacées. Le terme désigne également la plante elle-même, plante herbacée, vivace par ses tubercules mais toujours cultivée comme une culture annuelle. La pomme de terre est une plante qui réussit dans la plupart des sols, mais elle préfère les sols légers et légèrement acides. La plante est sujette aux maladies dans des sols calcaires ou manquant d’humus.</p>
+
+                    <img id="patateNouvelle" src="images/patateNouvelle.png" alt="Patates Nouvelles" width="150" height="124">
+
+                    <p>La pomme de terre est originaire de la cordillère des Andes (Pérou), dans le Sud-Ouest de l’Amérique du Sud où son utilisation remonte à environ 8 000 ans. Introduite en Europe vers la fin du xvie siècle à la suite de la découverte de l’Amérique par les conquistadors espagnols, elle s’est rapidement diffusée dans le monde et est en 2015 cultivée dans plus de 150 pays sous pratiquement toutes les latitudes habitées.</p>
+                    
+                    <p>Elle est une source importante de glucides, qui se présentent principalement sous forme de féculent, et selon son mode de cuisson elle peut apporter des quantités notables de protéines et de vitamines. Ses qualités nutritives et sa facilité de culture font qu’elle est devenue l’un des aliments de base de l’humanité : elle figure parmi les légumes et féculents les plus consommés et est la principale denrée alimentaire non céréalière du monde. Cultivée et consommée localement, relativement peu commercialisée sur le marché mondial sous sa forme crue, elle est recommandée par l’ONU pour atteindre la sécurité alimentaire.</p>
+                    <h5>WIKIPEDIA</h5>
+                </div>
+                
+                <div class="flex-child droite">
+                    <h1>La patate douce</h1>
+                    <h3>C'est très bon!</h3>
+                    <p>La patate (Ipomoea batatas), ou patate douce, est une espèce de plantes dicotylédones de la famille des Convolvulaceae, tribu des Ipomoeeae, vraisemblablement originaire d'Amérique tropicale. C'est une plante herbacée vivace dont la culture est très répandue dans toutes les régions tropicales et subtropicales, où on la cultive principalement pour ses tubercules (racines tubérisées) comestibles, riches en amidon. Le terme « patate » désigne aussi par métonymie les tubercules produits par cette plante. La patate est un cultigène hexaploïde, inconnu à l'état sauvage, cependant on a découvert en Amérique du Sud des formes sauvages tétraploïdes d’Ipomoea batatas.</p>
+                    
+                    <img id="patateDouce" src="images/patateDouce.jpg" alt="patates douces" height="161" width="161">
+
+                    <p>Avec une production annuelle de 113 Mt (2017), récoltées sur plus de 9 millions d'hectares, la patate douce est la septième production agricole au niveau mondial, après le blé, le riz, le maïs, la pomme de terre, l'orge et le manioc. La Chine est de loin le premier pays producteur avec 72 Mt (64 %). La patate douce est consommée principalement dans les pays en développement, où elle est parfois un aliment de base, par exemple en Papouasie-Nouvelle-Guinée, dans les îles Salomon et dans certains pays d'Afrique de l'Est (Burundi, Ouganda, Rwanda). La patate douce est aussi utilisée en alimentation animale, notamment pour l'élevage des porcs. En Chine, c'est le principal débouché (60 à 70 %) de la production de patates douces, la consommation des tubercules frais (environ 10 %) s'étant effondrée avec l'urbanisation de la population et l'élévation du niveau de vie, tandis qu'une part croissante des tubercules est transformée en farine et en fécule.</p>
+                    <h5>WIKIPEDIA</h5>
+                </div>
+              </div>
+              <div id="video">
+                <h1 id="lifeIsPotato">My life is potato...</h1>
+                <iframe src="https://www.youtube.com/embed/QiqqC_fbP1c" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+              <div id="galerie">
+                <h1 id="titreRecettes">Recettes de patates</h1>
+                <div id="recettes">
+                <div id="brochettes">
+                    <h3>Brochettes de patates</h3>
+                </div>
+                <div id="farcies">
+                    <h3>Patates farcies</h3>
+                </div>
+                <div id="hasselback">
+                    <h3>Hasselback</h3>
+                </div>
+                <div id="croquettes">
+                    <h3>Croquettes de patates</h3>
+                </div>
+                <div id="galettes">
+                    <h3>galettes de patates</h3>
+                </div>
+                </div>
+              </div>
+        </main>
+        <footer id="piedDePage">
+            <div id="footer">
+                <h2 id="lienCollege"><a href="https://www.cmaisonneuve.qc.ca/">Collège Maisonneuve</a></h2>
+                <a href="https://fr.wikipedia.org/wiki/Patate_douce">wikipedia: la patate douce</a>
+                <a href="https://fr.wikipedia.org/wiki/Pomme_de_terre">wikipedia: la pomme de terre</a>
+                <a href="https://www.atlasbig.com/fr-lu/pays-par-production-de-pommes-de-terre">Production de la patate mondial</a>
+                <a href="https://www.demotivateur.fr/food/15-idees-de-plats-faciles-et-rapides-avec-des-pommes-de-terre-20813">Recettes de patates</a>
+                <h3>3800, RUE SHERBROOKE EST</h3>
+                <h1>DÉPARTEMENT TIM</h1>
+                <p>Deux spécialisations, programmation interactive et création      médiatique, te permettant d’approfondir tes connaissances selon tes     intérêts et tes ambitions.
+                Un apprentissage par projets te permettant de mettre rapidement en application des connaissances et de développer tes compétences.
+                20 ans d’expertise et un solide réseau de contacts dans l’univers du multimédia.
+                Des enseignants dévoués, passionnés et habités par un savoir qu’ils aiment transmettre à leurs étudiants.
+                Participation à différents concours te permettant de faire rayonner ton talent et de vivre des expériences incroyables.
+                Des stages d’été rémunérés dans le cadre d’une alternance travail-études (ATE).
+                Un stage de 2 mois en entreprise.</p>
+            </div>
+            <div id="sociaux">
+                <a href="#"><img src="images/facebook.png" alt="facebook" width="50" height="50"></a>
+                <a href="#"><img src="images/instagram.png" alt="instagram" width="50" height="50"></a>
+                <a href="#"><img src="images/youtube.png" alt="youtube" width="50" height="50"></a>
+                <a href="#"><img src="images/twitter.png" alt="twitter" width="50" height="50"></a>
+            </div>
+            <h5>Copyright® 2022 Élorie Léonard</h5>
+        </footer>
+    </div>
+</body>
+
+</html>

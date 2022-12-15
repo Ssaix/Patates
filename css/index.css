@@ -1,0 +1,338 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+body{
+    background-image: url("../images/patates.jpg");
+    background-repeat: repeat;
+    overflow-x: hidden;
+}
+
+#global{
+    background-color: rgba(0, 0, 0, 0.433);
+}
+
+header{
+    width: 100vw;
+    height: 100vh;
+}
+
+nav{
+    height: 50px;
+    width: 100vw;
+    background-color: rgb(0, 0, 0);
+    position: fixed;
+}
+
+nav ol{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+}
+
+a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+a:hover{
+    color: rgb(246, 255, 0);
+    text-decoration: none;
+}
+
+a:active{
+    color: red;
+}
+
+#accueil{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    vertical-align: center;
+    font-size: 200%;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    background-color: wheat;
+    -webkit-border-radius: 40px;
+    border-radius: 40px;
+    text-shadow: 0 0 10px #BD9820;
+}
+
+#top{
+    margin-top: 200px;
+}
+
+#inscription, #tableau, #article, #video, #galerie, #piedDePage{
+    height: 100vh;
+    width: 100vw;
+}
+
+/*inscription*/
+
+#titreIncrip{
+    padding-top: 60px;
+    color: whitesmoke;
+    text-align: center;
+}
+
+form, #identification, #patatePref, #contacts, #bloc, #boutons{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    border: none;
+}
+
+#identification, #patatePref, #contacts, #bloc{
+    background-color: #0000002d;
+}
+
+form{
+    width: 80vw;
+    height: 80vh;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-image: url("../images/patates2.jpg");
+    background-repeat: repeat;
+    -webkit-border-radius: 40px;
+    border-radius: 40px;
+    -webkit-box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.8);
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.8);
+    text-shadow: 0 0 3px #000000;
+    color: whitesmoke;
+}
+
+#leg1{
+    padding-left: 42%;
+}
+
+#leg2{
+    padding-left: 48%;
+}
+
+#leg3{
+    padding-left: 40%;
+}
+
+.colonne{
+    flex: 0 1 40%;
+    border: none;
+}
+
+#identification{
+    width: 80vw;
+}
+
+#patatePref{
+    flex-direction: column;
+    padding-left: 46%;
+}
+
+#boutons{
+    padding-left: 50%;
+}
+
+fieldset{
+    padding-top: 10px;
+}
+
+/*tableau*/
+
+table, th, td {
+    border-bottom: 2px solid black;
+    border-collapse: collapse;
+    background-color: wheat;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80vw;
+    height: 40px;
+    text-align: center;
+  }
+
+
+#producteurs{
+    color: whitesmoke;
+    padding-top: 150px;
+    padding-left: 35%;
+}
+
+/*article*/
+
+.flex-container {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+
+.flex-child {
+    flex: 1;
+    height: 100vh;
+    width: 50%;
+    text-shadow: 0 0 3px #ffffff;
+    background-color: #c9c9c92c;
+    font-weight: bolder;
+    text-align: center;
+}  
+
+.flex-child:first-child {
+    margin-right: 20px;
+}
+
+p{
+    font-size: larger;
+    padding-top: 50px;
+}
+
+h1{
+    margin-top: 50px;
+}
+
+#patateNouvelle{
+    float:left;
+    transition: all 0.5s ease;
+}
+
+#patateNouvelle:hover{
+    transform-origin: 50% 50%;
+    transform: rotate(3turn);
+}
+
+#patateDouce{
+    float: right;
+}
+
+/*vidéos*/
+
+iframe{
+    margin-left: 31.5%;
+    -webkit-border-radius: 40px;
+    border-radius: 40px;
+    -webkit-box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.8);
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.8);
+    width: 560px;
+    height: 315px;
+}
+
+#lifeIsPotato{
+    text-align: center;
+    color: whitesmoke;
+    padding-top: 200px;
+}
+
+/*galerie*/
+
+#titreRecettes{
+    text-align: center;
+    color: whitesmoke;
+    padding-top: 250px;
+}
+
+#recettes{
+    display: flex;
+    justify-content: space-around;
+}
+
+#brochettes, #farcies, #hasselback, #croquettes, #galettes{
+    width: 200px;
+    height: 200px;
+    border: 100px solid #BD9820;
+    transition: all 0.1s ease;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    text-align: center;
+    text-shadow: 0 0 3px #ffffff;
+}
+
+#brochettes{
+    background-image: url("../images/brochettesDePatates.jpg");
+    background-size: 150%;
+    background-repeat: no-repeat;
+}
+
+#brochettes:hover{
+    transform-origin: 50% 50%;
+    transform: scale(1.5,1.5);
+    border: 5px solid #BD9820;
+}
+
+#farcies{
+    background-image: url("../images/patatesFarcies.jpg");
+    background-size: 150%;
+    background-repeat: no-repeat;
+}
+
+#farcies:hover{
+    transform-origin: 50% 50%;
+    transform: scale(1.5,1.5);
+    border: 5px solid #BD9820;
+}
+
+#hasselback{
+    background-image: url("../images/hasselback.jpg");
+    background-size: 150%;
+    background-repeat: no-repeat;
+}
+
+#hasselback:hover{
+    transform-origin: 50% 50%;
+    transform: scale(1.5,1.5);
+    border: 5px solid #BD9820;
+}
+
+#croquettes{
+    background-image: url("../images/croquettesDePatates.jpg");
+    background-size: 150%;
+    background-repeat: no-repeat;
+}
+
+#croquettes:hover{
+    transform-origin: 50% 50%;
+    transform: scale(1.5,1.5);
+    border: 5px solid #BD9820;
+}
+
+#galettes{
+    background-image: url("../images/galettesDePatates.jpg");
+    background-size: 150%;
+    background-repeat: no-repeat;
+}
+
+#galettes:hover{
+    transform-origin: 50% 50%;
+    transform: scale(1.5,1.5);
+    border: 5px solid #BD9820;
+}
+
+/*pied de page*/
+
+footer{
+    color: whitesmoke;
+    text-align: center;
+}
+
+#footer{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+}
+
+#lienCollege{
+    margin-top: 120px;
+}
+
+#sociaux{
+    text-align: center;
+}
